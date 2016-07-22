@@ -5,6 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="${packageName}.mvp.${mvpName}.${mvpName}Activity">
+    tools:context="${packageName}.${mvpName}.${mvpName}Activity">
 
 </LinearLayout>

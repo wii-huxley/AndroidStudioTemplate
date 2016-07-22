@@ -1,8 +1,7 @@
-package ${packageName}.mvp.${mvpName};
-
+package ${packageName}.${mvpName};
 
 import android.support.annotation.NonNull;
-import ${packageName}.BaseFragment;
+import com.huxley.wii.wiitools.base.BaseFragment;
 
 public class ${mvpName}Fragment extends BaseFragment implements ${mvpName}Contract.View {
 

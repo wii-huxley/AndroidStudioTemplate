@@ -1,4 +1,4 @@
-package ${packageName}.mvp.${mvpName};
+package ${packageName}.${mvpName};
 
 import ${packageName}.BasePresenter;
 import ${packageName}.BaseView;

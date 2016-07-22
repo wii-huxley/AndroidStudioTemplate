@@ -1,6 +1,6 @@
-package ${packageName}.mvp.${mvpName};
+package ${packageName}.${mvpName};
 
-import ${packageName}.BaseActivity;
+import com.huxley.wii.wiitools.base.BaseActivity;
 
 public class ${mvpName}Activity extends BaseActivity {
 

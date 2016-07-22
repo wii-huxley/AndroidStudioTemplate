@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!-- 主要用于生成我们实际需要的代码 -->
+<!-- 涓昏鐢ㄤ簬鐢熸垚鎴戜滑瀹為檯闇�瑕佺殑浠ｇ爜 -->
 <recipe>
 
     <merge from="AndroidManifest.xml.ftl"
@@ -7,8 +7,8 @@
 
 	<#if hasActivity>
 		<instantiate from="root/src/app_package/MVPActivity.java.ftl"
-			to="${escapeXmlAttribute(srcOut)}/mvp/${mvpName}/${mvpName}Activity.java" />
-		<open file="${escapeXmlAttribute(srcOut)}/mvp/${mvpName}/${mvpName}Activity.java" />
+			to="${escapeXmlAttribute(srcOut)}/${mvpName}/${mvpName}Activity.java" />
+		<open file="${escapeXmlAttribute(srcOut)}/${mvpName}/${mvpName}Activity.java" />
 
 		<#if isLayouts>
 			<instantiate from="root/res/layout/mvp_activity.xml.ftl"
@@ -20,8 +20,8 @@
 			<open file="${escapeXmlAttribute(resOut)}/layout/${mvpName?lower_case}_activity.xml"/>
 		</#if>
 	</#if>
-	
-    <#if isLayouts>
+
+  <#if isLayouts>
 		<instantiate from="root/res/layout/mvp_fragment.xml.ftl"
 			to="${escapeXmlAttribute(resOut)}/layouts/${mvpName?lower_case}/layout/fragment_${mvpName?lower_case}.xml" />
 		<open file="${escapeXmlAttribute(resOut)}/layouts/${mvpName?lower_case}/layout/fragment_${mvpName?lower_case}.xml"/>
@@ -32,14 +32,14 @@
 	</#if>
 
 	<instantiate from="root/src/app_package/MVPContract.java.ftl"
-        to="${escapeXmlAttribute(srcOut)}/mvp/${mvpName}/${mvpName}Contract.java" />
-    <open file="${escapeXmlAttribute(srcOut)}/mvp/${mvpName}/${mvpName}Contract.java" />
+        to="${escapeXmlAttribute(srcOut)}/${mvpName}/${mvpName}Contract.java" />
+    <open file="${escapeXmlAttribute(srcOut)}/${mvpName}/${mvpName}Contract.java" />
 
 	<instantiate from="root/src/app_package/MVPView.java.ftl"
-        to="${escapeXmlAttribute(srcOut)}/mvp/${mvpName}/${mvpName}Fragment.java" />
-    <open file="${escapeXmlAttribute(srcOut)}/mvp/${mvpName}/${mvpName}Fragment.java" />
+        to="${escapeXmlAttribute(srcOut)}/${mvpName}/${mvpName}Fragment.java" />
+    <open file="${escapeXmlAttribute(srcOut)}/${mvpName}/${mvpName}Fragment.java" />
 
 	<instantiate from="root/src/app_package/MVPPresenter.java.ftl"
-        to="${escapeXmlAttribute(srcOut)}/mvp/${mvpName}/${mvpName}Presenter.java" />
-    <open file="${escapeXmlAttribute(srcOut)}/mvp/${mvpName}/${mvpName}Presenter.java" />
+        to="${escapeXmlAttribute(srcOut)}/${mvpName}/${mvpName}Presenter.java" />
+    <open file="${escapeXmlAttribute(srcOut)}/${mvpName}/${mvpName}Presenter.java" />
 </recipe>

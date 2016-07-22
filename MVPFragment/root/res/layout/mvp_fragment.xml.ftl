@@ -5,6 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="${packageName}.mvp.${mvpName}.${mvpName}Fragment">
+    tools:context="${packageName}.${mvpName}.${mvpName}Fragment">
 
 </LinearLayout>

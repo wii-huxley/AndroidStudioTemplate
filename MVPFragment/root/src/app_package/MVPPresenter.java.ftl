@@ -1,4 +1,4 @@
-package ${packageName}.mvp.${mvpName};
+package ${packageName}.${mvpName};
 
 import android.support.annotation.NonNull;
 
