@@ -2,10 +2,10 @@
 <template
     format="5"
     revision="5"
-    name="MVP Fragment"
+    name="MVP Page"
     minApi="7"
     minBuildApi="14"
-    description="Create a fragment page base on th MVP">
+    description="Create a page base on th MVP">
 
     <category value="Activity" />
     <formfactor value="Mobile" />
@@ -17,6 +17,13 @@
         constraints="class|nonempty"
         default=""
         help="The name of mvp" />
+
+    <parameter
+        id="hasActivity"
+        name="is include activity"
+        type="boolean"
+        default="false"
+        help="if true, create activity" />
 
     <parameter
         id="packageName"
